@@ -3,7 +3,7 @@ package git;
 public class Cos {
 
     // Version 1.0.0
-    public static double cosine(int degree) {
+    public static double cosineA(int degree) {
         int n = 4;
         double value = 1.0;
         double radians = degree * Math.PI/180;
@@ -24,6 +24,6 @@ public class Cos {
     }
     
     public static void main(String[] args) {
-        System.out.println(Cos.cosine(25));
+        System.out.println(Cos.cosineA(25));
     }
 }
