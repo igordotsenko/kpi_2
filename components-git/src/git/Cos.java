@@ -23,6 +23,20 @@ public class Cos {
     }
     
     public static void main(String[] args) {
-        System.out.println(Cos.cosineA(25, 4));
+        cosTest();
+    }
+    
+    private static void cosTest() {
+        test(0.9063077871054811, Cos.cosineA(25, 4));
+        test(1, Cos.cosineA(0, 4));
+        test(0.6427876798657339, Cos.cosineA(50, 4));
+        System.out.println("Test passed");
+    }
+    
+    private static void test(double expected, double actual) {
+        if (Double.compare(expected, actual) != 0) {
+            System.err.println("Cos test failed. Expected: " + expected + ", but got " + actual);
+            System.exit(1);
+        }
     }
 }
